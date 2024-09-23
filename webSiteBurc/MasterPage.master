@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width:800px;
+        }
+        .auto-style4 {
+            height: 170px;
+        }
+        .auto-style6 {
+            height: 172px;
+            width: 800px;
+            border-radius:15px;
+        }
+        .auto-style2 {
+            color:deeppink;
+            width:800px;
+            
+        }
+    </style>
+    <link href="App_Themes/SkinFile/still.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1"  runat="server">
+    <div>
+        <table align="center"  class="tablorenk"  cellpadding="3" cellspacing="3" class="auto-style1">
+            <tr><td class="baslik">ASTROLOJİ</td></tr>
+            <tr>
+                <td class="auto-style4">
+                    <img class="auto-style6" class="resim" src="banner.jpg" /></td>
+            </tr>
+            <tr >
+                <td class="auto-style2">
+                    <asp:Menu ID="Menu1"  class="yuvarla" runat="server" Font-Bold="True" Font-Size="16px" Orientation="Horizontal" StaticSubMenuIndent="16px" Width="800px" ForeColor="#6600FF">
+                        <Items>
+                            <asp:MenuItem Text="Anasayfa" Value="Anasayfa" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Ateş Grubu" Value="Ateş Grubu" NavigateUrl="~/Ates.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Hava Grubu" Value="Hava Grubu" NavigateUrl="~/hava.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Su Grubu" Value="Su Grubu" NavigateUrl="~/su.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Toprak Grubu" Value="Toprak Grubu" NavigateUrl="~/toprak.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="İletişim" Value="İletişim" NavigateUrl="~/iletisim.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#6600FF" Font-Bold="True" CssClass="yuvarla" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="27px" CssClass="yuvarla" />
+                        <StaticMenuStyle HorizontalPadding="6px" CssClass="yuvarla" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                
+                <td class="sitemap">
+                    
+                    <a href="Default.aspx" style="color:white">Anasayfa /</a>
+                    <a href="Ates.aspx" style="color:white">Ateş Burçları /</a>
+                    <a href="su.aspx" style="color:white">Su Burçları /</a>
+                    <a href="hava.aspx" style="color:white">Hava Burçları /</a>
+                    <a href="toprak.aspx" style="color:white">Toprak Burçları /</a>
+                    <a href="iletisim.aspx" style="color:white">İletişim Sayfası </a>
+
+                </td>
+            </tr>
+            <tr>
+                
+                <td class="altyazi">Copyright © 2023 |  Ismail Samil Kocakavuk | Tüm Hakları Saklıdır.</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+
+</body>
+</html>

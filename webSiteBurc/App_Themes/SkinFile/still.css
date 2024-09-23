@@ -1,0 +1,66 @@
+﻿body {
+    font-family:'Trebuchet MS';
+    font-size:16px;
+    background-color:lightblue;
+    text-align:justify;
+    line-height:25px;
+}
+
+.resim {
+    border-radius:15px
+}
+.altyazi{
+    border-radius:13px;
+        margin-top: 8px;
+        background-color:rgb(39, 44, 39);
+        color:white;
+        text-align:center;
+        clear:both;
+        padding:8px;
+        font-size:12px;
+        font-family:'Lucida Handwriting';
+}
+.sitemap {
+    border-radius:13px;
+        margin-top: 16px;
+        background-color:rgb(39, 44, 39);
+        color:white;
+        text-align:center;
+ 
+        padding:8px;
+     
+
+}
+.baslik{
+    text-align:center;
+    font-family:Tahoma;
+    color:#690573;
+    font-size:18px;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+p {
+    font-family:Calibri;
+
+}
+.yuvarla2 {
+    border-radius:300px;
+    width:300px;
+    height:300px;
+}
+.tablorenk {
+    background-color:lightcyan;
+    border-radius:50px;
+    padding:25px
+}
+.yuvarla {
+    border-radius:15px;
+}
+.p {
+    font-family:Calibri;
+}
+a:link {
+    color: white;    
+    text-decoration: none;
+}
